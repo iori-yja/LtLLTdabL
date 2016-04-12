@@ -1,7 +1,7 @@
-package = "lualatex_buildtool"
-version = "-1"
+package = "ltlltdabl"
+version = "1.0-0"
 source = {
-   url = "*** please add URL for source tarball, zip or repository here ***",
+   url = "git://github.com/iori-yja/LtLLTdabL/",
    tag = "v"
 }
 description = {
@@ -11,11 +11,12 @@ description = {
    license = "MIT"
 }
 dependencies = {
-   "lua >= 5.2, < 5.4"
+   "lua >= 5.2",
+	 "inotify >= 0.2"
 }
 build = {
    type = "builtin",
    modules = {
-      build = "build.lua"
+      build = "ltlltdabl.lua"
    }
 }
